@@ -1,0 +1,37 @@
+date,product_name,category,quantity,selling_price,cost_price,customer_name,customer_age,customer_gender,total,revenue,total_rev
+01/01/2013,Pen,stationary,2,10,5,Yash Vishe,20,Male,20,5,10
+01/01/2013,racing car,toys,1,200,50,Tifa Lockhart,23,Female,200,150,150
+01/01/2013,Pencil,stationary,100,5,2,Nishant Shenoy,19,Male,500,3,300
+01/01/2022,pen,stationary,10,10,5,Cloud Strife,27,Male,100,5,50
+01/02/2022,robot,toys,1,1000,300,Mihir Bachhav,20,Male,1000,700,700
+02/01/2022,saffola oil,grocery,1,200,130,Theresa may,65,Female,200,70,70
+02/02/2014,power bank,electronics,1,2000,1100,Ayanokouji Kiyotaka,16,Male,2000,900,900
+03/16/2015,basmati rice,grocery,15,100,20,mihir bachhav,20,Male,1500,80,1200
+03/16/2015,racing car,toys,1,500,200,priyam soni,7,Male,500,300,300
+03/16/2015,parker pen,stationary,1,230,120,mihir bachhav,20,Male,230,110,110
+03/16/2016,legos,toys,1,2750,1200,Nishant Shenoy,19,Male,2750,1550,1550
+03/16/2016,techmax,stationary,3,1000,750,Tifa Lockhart,26,Female,3000,250,750
+03/16/2017,sunscreen lotion,beauty and makeup,3,750,600,Hrutika Badgeri,20,Female,2250,150,450
+03/16/2017,pen,stationary,10,10,5,yash vishe,20,Male,100,5,50
+03/16/2018,teady bear,toys,2,1000,850,Siddhi Chaudhari,20,Female,2000,150,300
+03/16/2018,transformers,toys,1,1500,1100,mihir bachhav,20,Male,1500,400,400
+03/16/2017,chocos,grocery,25,20,5,Nishant Shenoy,19,Male,500,15,375
+03/16/2018,boat rockerz 255,electronics,1,2225,1700,Rohit chavan,20,Male,2225,525,525
+03/16/2018,rice flour,grocery,1,300,250,jimmy falllon,36,Male,300,50,50
+03/16/2019,makeup set,beauty and makeup,1,8275,6555,Emma Watson,32,Female,8275,1720,1720
+03/16/2020,sun flower oil,grocery,7,325,250,Prashant Chauhan,26,Male,2275,75,525
+03/16/2020,samsung phone,electronics,1,12000,9250,Rohan Temgire,23,Male,12000,2750,2750
+03/16/2021,tur daal,grocery,100,110,85,vaishnavi pandit,45,Female,11000,25,2500
+02/16/2022,pen,stationary,20,10,5,priyam soni,13,Male,200,5,100
+02/16/2022,book,stationary,1,500,350,yash vishe,20,Male,500,150,150
+03/16/2022,racing car,toys,2,350,150,priyam soni,13,Male,700,200,400
+03/17/2022,sunflower oil,grocery,1,350,235,mihir bachhav,20,Male,350,115,115
+03/18/2022,baking soda,grocery,10,35,20,Nishant Shenoy,19,Male,350,15,150
+04/16/2022,robot,toys,1,2250,1750,Tifa Lockhart,26,Female,2250,500,500
+05/16/2022,makeup set,beauty and makeup,1,2500,1950,Hrutika Badgeri,20,Female,2500,550,550
+06/16/2022,power bank,electronics,1,1500,1100,yash vishe,20,Male,1500,400,400
+07/16/2022,books,stationary,2,1050,750,mihir bachhav,20,Female,2100,300,600
+07/18/2022,pen,stationary,1,10,5,yash vishe,20,Male,10,5,5
+07/19/2022,book,stationary,1,100,60,mihir bachhav,20,Male,100,40,40
+07/20/2022,racing car,toys,1,200,100,Nishant Shenoy,19,Male,200,100,100
+07/22/2022,saffola oil,grocery,1,100,80,mihir bachhav,20,Male,100,20,20

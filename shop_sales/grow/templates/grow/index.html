@@ -1,0 +1,197 @@
+{% extends 'base.html' %} {% block content %}
+
+<style>
+    th,
+    td {
+        padding: 15px;
+    }
+</style>
+
+<h1 class='mt-5'>Dashboard</h1>
+
+<div style="width: 88vw; height: 50vh" class="row mt-5 mb-5 mr-5">
+    <div style="background-color: rgb(236, 240, 243)" class="col-md-4">
+        <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
+    <div style="background-color: rgb(236, 240, 243)" class="col-md-4">
+        <canvas id="myChart2" width="400" height="400"></canvas>
+    </div>
+</div>
+
+<br /><br />
+
+<h2>Recent Transactions</h2>
+
+<table class="mt-5" style="width: 100%; height: 200px; background-color: rgb(236, 240, 243)">
+    <tr>
+        <th>Date</th>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Customer Name</th>
+    </tr>
+    {% for recent in recents %}
+    <tr>
+        <td>{{ recent.date }}</td>
+        <td>{{ recent.product_name }}</td>
+        <td>{{ recent.category }}</td>
+        <td>{{ recent.quantity }}</td>
+        <td>{{ recent.customer_name }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br><br>
+
+<h2>Gender Wise Sales</h2>
+<div style="background-color: rgb(236, 240, 243)" class=" row mt-5">
+    <div class="m-5 col-md-10">
+        <canvas id="genderChart" width="400" height="100"></canvas>
+    </div>
+</div>
+
+<div  style="width: 88vw; height: 50vh" class="row mt-5 mb-5 mr-5">
+    <div style="background-color: rgb(236, 240, 243)" class="col-md-4">
+        <h2 class="m-5 mb-5">Category wise sales</h2>
+        <canvas id="categoryChart" width="400" height="100"></canvas>
+    </div>
+    <div style="background-color: rgb(236, 240, 243)" class="col-md-4">
+        <h2 class="m-5 mb-5">Age wise sales</h2>
+        <canvas id="ageChart" width="400" height="400"></canvas>
+    </div>
+</div>
+
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: {{ y_months | safe}},
+            datasets: [{
+                label: 'Total sales (per year)',
+                data: {{ y_prices | safe }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+        }
+    });
+
+    const dtx = document.getElementById('myChart2').getContext('2d');
+    const myChart2 = new Chart(dtx, {
+        type: 'bar',
+        data: {
+            labels: {{ months | safe}},
+            datasets: [{
+                label: 'Total sales (per month)',
+                data: {{ prices | safe }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                    'rgba(54, 162, 235, 0.8)',
+                    'rgba(255, 206, 86, 0.8)',
+                    'rgba(75, 192, 192, 0.8)',
+                    'rgba(153, 102, 255, 0.8)',
+                    'rgba(255, 159, 64, 0.8)'
+                ],
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+        }
+    });
+
+    const etx = document.getElementById('genderChart').getContext('2d');
+    const genderChart = new Chart(etx, {
+        type: 'bar',
+        data: {
+            labels: {{ gender | safe}},
+            datasets: [{
+                label: 'gender wise sales',
+                data: {{ gws | safe }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                    'rgba(54, 162, 235, 0.8)',
+                ],
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            scales: {
+                
+            },
+        }
+    });
+     
+    const ftx = document.getElementById('categoryChart').getContext('2d');
+    const categoryChart = new Chart(ftx, {
+        type: 'pie',
+        data: {
+            labels: {{ category | safe}},
+            datasets: [{
+                label: 'category wise sales',
+                data: {{ cws | safe }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                    'rgba(54, 162, 235, 0.8)',
+                    'rgba(255, 206, 86, 0.8)',
+                    'rgba(75, 192, 192, 0.8)',
+                    'rgba(153, 102, 255, 0.8)',
+                    'rgba(255, 159, 64, 0.8)'
+                ],
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+        }
+    });
+
+    const gtx = document.getElementById('ageChart').getContext('2d');
+    const ageChart = new Chart(gtx, {
+        type: 'bar',
+        data: {
+            labels: {{ age_categories | safe}},
+            datasets: [{
+                label: 'Age wise sales',
+                data: {{ age_sales | safe }},
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.8)',
+                    'rgba(54, 162, 235, 0.8)',
+                    'rgba(255, 206, 86, 0.8)',
+                    'rgba(75, 192, 192, 0.8)',
+                    'rgba(153, 102, 255, 0.8)',
+                    'rgba(255, 159, 64, 0.8)'
+                ],
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            scales: {
+                
+            },
+        }
+    });
+
+
+
+</script>
+
+{% endblock %}
