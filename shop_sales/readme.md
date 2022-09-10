@@ -16,9 +16,29 @@ The vision behind this project was to provide the power of data visualization an
 
 ## Technologies
 1. HTML
-2. Python
-3. Django 
-4. HTML
-5. Chart.js
+2. Python version: 3.8
+3. Django version: 4.0.3
+4. Chart.js
 
+## Setup
 
+First step is to clone the repository using `git clone` command.
+Second step is to install all the requirements using `pip install -r requirements.txt`. Make sure you have python installed.
+Now simply run `python manage.py runserver`.
+
+## Team Info
+This project was a group project lead by me. Team members include:
+[Nishant Shenoy](https://github.com/Nis7538)
+[Mihir Bachhav]()
+
+## Responsibilities
+
+● Team leader.
+● Coding various visualization algorithms using pandas.
+● UI design of the application.
+
+## Illustrations
+
+![Home Page](https://github.com/Yashvishe13/Data_Analysis/blob/main/shop_sales/images/img1.png)
+![Home Page](https://github.com/Yashvishe13/Data_Analysis/blob/main/shop_sales/images/img2.png)
+![Home Page](https://github.com/Yashvishe13/Data_Analysis/blob/main/shop_sales/images/img3.png)
