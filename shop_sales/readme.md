@@ -33,9 +33,9 @@ This project was a group project lead by me. Team members include:
 
 ## Responsibilities
 
-● Team leader.
-● Coding various visualization algorithms using pandas.
-● UI design of the application.
+1. Team leader.
+2. Coding various visualization algorithms using pandas.
+3. UI design of the application.
 
 ## Illustrations
 
