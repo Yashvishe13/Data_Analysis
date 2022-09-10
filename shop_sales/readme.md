@@ -22,14 +22,14 @@ The vision behind this project was to provide the power of data visualization an
 
 ## Setup
 
-First step is to clone the repository using `git clone` command.
-Second step is to install all the requirements using `pip install -r requirements.txt`. Make sure you have python installed.
-Now simply run `python manage.py runserver`.
+1. First step is to clone the repository using `git clone` command.
+2. Second step is to install all the requirements using `pip install -r requirements.txt`. Make sure you have python installed.
+3. Now simply run `python manage.py runserver`.
 
 ## Team Info
 This project was a group project lead by me. Team members include:
-[Nishant Shenoy](https://github.com/Nis7538)
-[Mihir Bachhav]()
+1. [Nishant Shenoy](https://github.com/Nis7538)
+2. [Mihir Bachhav]()
 
 ## Responsibilities
 
